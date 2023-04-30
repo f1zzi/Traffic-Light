@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    
+}
+
+a {
+    text-decoration: none;
+    transition: 0.3s linear;
+}
+
+a:hover{
+    color: #ff06ea6c;
+    
+}
+
+body {
+    overflow: hidden;
+    margin: 50px;
+    height: 100vh;
+    background: linear-gradient(180deg,
+    hsl(230, 100%, 3%),
+    hsl(230, 100%, 5%),
+    hsl(230, 100%, 7%),
+    hsl(230, 100%, 7%),
+    hsl(230, 100%, 15%),
+    hsl(258, 100%, 17%),
+    hsl(281, 71%, 35%),
+    hsl(288, 70%, 31%)
+  );
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.name {
+    text-shadow: 0px 0px 50px #ff06ea;
+    font-family: Lato;
+    opacity: 0.8;
+    
+    
+}
+.info {
+    font-family: Lato;
+    opacity: 0.8;
+    text-shadow: 0px 0px 50px #ff06ea;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding: 45px 30px;
+    border: 20px rgb(23, 23, 23) solid;
+    border-radius: 50px ;
+    box-shadow: 0px 0px 100px 20px  #ffffff36;
+}
+
+.light {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    padding: 50px;
+    
+}
+
+.red {
+    
+    box-shadow: 0px 0px 30px  #ff0808;
+}
+
+.yellow {
+    
+    box-shadow: 0px 0px 30px  #d2a616;
+}
+
+.green {
+    
+    box-shadow: 0px 0px 30px  #159825;
+}
+
+.pole {
+    width: 45px;
+    height: 50vh;
+    background: linear-gradient(to right,
+     hsl(240, 15%, 14%),
+     hsl(240, 15%, 25%), 
+     hsl(240, 15%, 14%),
+     hsl(240, 15%, 14%), 
+     hsl(240, 15%, 5%) );
+
+
+}
+
+
+
+.red {
+    animation: red-light 15s infinite;
+    background-color: #ff000073;
+  }
+  
+  .yellow {
+    animation:  yellow-light 15s infinite;
+    animation-delay: 3s;
+    background-color: #ffc40073;
+  }
+  
+  .green {
+    animation: green-light 15s infinite;
+    background-color: #00800073;
+    animation-delay: 6s;
+  }
+  
+  @keyframes red-light {
+    0% {
+      background-color: #ff000073;
+    }
+    20% {
+      background-color: #ff0000;
+    }
+    40%{
+      background-color: #ff000073;
+    }
+    100% {
+      background-color: #ff000073;
+    }
+  }
+  
+  
+  @keyframes yellow-light {
+      0% {
+        background-color: #ffc80073;
+      }
+      20% {
+        background-color: #ffb300;
+      }
+      30%{
+          background-color: #ffd00073;
+        }
+      100% {
+        background-color: #ffc40073;
+      }
+    }
+  
+    @keyframes green-light {
+      0% {
+        background-color: #00800073;
+      }
+      20% {
+        background-color: #22ff00;
+      }
+      40%{
+          background-color: #00800073;
+        }
+      100% {
+        background-color: #00800073;
+      }
+    }
+    
+    
